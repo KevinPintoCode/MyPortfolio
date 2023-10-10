@@ -1,11 +1,100 @@
+@import 'animate.css';
+
+.greeting {
+  //check responsive
+  position: absolute;
+  left: 10%;
+  top: 32%;
+  font-family: 'Pixelify Sans', cursive;
+  transform: translateY(-50%);
+  width: 40%;
+  font-size: 2.5rem;
+  opacity: 0;
+  animation: backInLeft 1s linear both;
+  animation-duration: 1.8s;
+  animation-delay: -0.7s;
+  margin-bottom: auto;
+}
+
 .home-page {
+  animation: fadeIn 1.2s forwards;
+  animation-delay: 2.3s;
+
+  .purple {
+    color: #a970ff;
+  }
+  span.gamer {
+    font-family: 'Pixelify Sans', cursive;
+    font-weight: 400;
+    color: #a970ff;
+  }
   .text-zone {
     position: absolute;
     left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    max-height: 90%;
   }
   h1 {
+    font-size: 2rem;
+    margin: 0;
+
+    &::before {
+      content: '<h1>';
+      font-family: 'Pixelify Sans', cursive;
+      color: #a970ff;
+      font-size: 1.2rem;
+      position: absolute;
+      margin-top: -2.3rem;
+      opacity: 0.8;
+    }
+    &::after {
+      content: '</h1>';
+      font-family: 'Pixelify Sans', cursive;
+      color: #a970ff;
+      font-size: 1.2rem;
+      position: absolute;
+      opacity: 0.8;
+      margin-top: 0.8rem;
+      margin-left: 1rem;
+    }
+
     img {
-      width: 32px;
+      width: 2.6rem;
+      margin-left: 1rem;
+      margin-right: -0.6rem;
+      opacity: 0;
+      height: auto;
+      animation: rotateIn 1s linear both;
+      animation-duration: 1.4s;
+    }
+  }
+  h2 {
+    font-weight: 400;
+    font-size: 1.4rem;
+    opacity: 0.6;
+    letter-spacing: 0.4rem;
+    animation: fadeIn 1s 1.8s backwards;
+    //Check
+  }
+  .flat_button {
+    color: #a970ff;
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 0.3rem;
+    font-family: 'Pixelify Sans', cursive;
+    text-decoration: none;
+    padding: 0.8rem 1.1rem;
+    border: 1px solid #a970ff;
+    margin-top: 2rem;
+    float: left;
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
+    //check
+    &:hover {
+      background: #a970ff;
+      color: #1d1d1d;
     }
   }
 }

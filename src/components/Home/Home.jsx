@@ -1,21 +1,33 @@
 //Router
-import { Link } from 'react-dom'
+import { Link } from 'react-router-dom'
 //React
-import Logo from '../../assets/images/logo.png'
+import k_letter from '../../assets/images/k_letter.png'
 import './Home.scss'
 
 export default function Home() {
   return (
-    <div className="container home-page">
-      <div className="text-zone">
-        <h1>
-          Hi, <br /> I'm
-          <img src={Logo} alt="developer" />
-          Kevin Pinto
-          <br />
-          Web developer
-          <h2>Frontend Developer / Designer / Gamer</h2>
-        </h1>
+    <div>
+      <div className="greeting">Greetings adventurer,</div>
+      <div className="container home-page">
+        <div className="text-zone">
+          <h1>
+            <br />
+            <br />
+            <br />
+            I'm
+            <img className="k_letter" src={k_letter} alt="developer" />
+            evin Pinto
+            <br />
+            web developer
+          </h1>
+          <h2>
+            Frontend Developer / <span className="gamer">Gamer</span>{' '}
+            <span className="purple">/</span> Designer /
+          </h2>
+          <Link to="/contact" className="flat_button">
+            CONTACT ME
+          </Link>
+        </div>
       </div>
     </div>
   )
