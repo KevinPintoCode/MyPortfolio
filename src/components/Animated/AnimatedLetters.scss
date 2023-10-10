@@ -1,0 +1,12 @@
+.text-animate {
+  min-width: 8px;
+  display: inline-block;
+  animation-fill-mode: both;
+
+  &:hover {
+    height: 1px;
+    animation: rubberBand 1s;
+    font-family: 'Pixelify Sans', cursive;
+    color: #a970ff;
+  }
+}

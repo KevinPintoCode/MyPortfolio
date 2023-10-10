@@ -17,7 +17,7 @@ export default function Sidebar() {
         <NavLink
           className="active link home-link"
           exact="true"
-          activeClassName="active"
+          activeclassname="active"
           to="/"
         >
           <TbHomeMove />
@@ -25,7 +25,7 @@ export default function Sidebar() {
         <NavLink
           className="link about-link"
           exact="true"
-          activeClassName="active"
+          activeclassname="active"
           to="/about"
         >
           <RiContactsLine />
@@ -33,7 +33,7 @@ export default function Sidebar() {
         <NavLink
           className="link projects-link"
           exact="true"
-          activeClassName="active"
+          activeclassname="active"
           to="/projects"
         >
           <FaQuestion />
@@ -41,7 +41,7 @@ export default function Sidebar() {
         <NavLink
           className="link contact-link"
           exact="true"
-          activeClassName="active"
+          activeclassname="active"
           to="/contact"
         >
           <FaRegEnvelope />
