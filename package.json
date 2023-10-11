@@ -12,6 +12,8 @@
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "animate.css": "^4.1.1",
+    "animejs": "^3.2.1",
+    "gsap": "^3.12.2",
     "gsap-trial": "^3.12.2",
     "loaders.css": "^0.1.2",
     "nodemon": "^3.0.1",

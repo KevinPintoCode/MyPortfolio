@@ -1,11 +1,11 @@
 //React
-import { useState } from 'react'
-import './App.scss'
-import { Routes, Route } from 'react-router-dom'
+import { useState } from 'react';
+import './App.scss';
+import { Routes, Route } from 'react-router-dom';
 
 //Components
-import Layout from './components/Layout'
-import Home from './components/Home/Home'
+import Layout from './components/Layout';
+import Home from './components/Home/Home';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         </Route>
       </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

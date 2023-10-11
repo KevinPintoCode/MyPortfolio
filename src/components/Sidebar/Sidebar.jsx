@@ -1,10 +1,14 @@
-import { Link, NavLink } from 'react-router-dom'
-import './Sidebar.scss'
-import Logo from '../../assets/images/logo.png'
-import LogoSubtitle from '../../assets/images/subtitle.png'
-import { TbHomeMove } from 'react-icons/tb'
-import { FaRegEnvelope, FaQuestion } from 'react-icons/fa6'
-import { RiContactsLine, RiLinkedinBoxLine, RiGithubLine } from 'react-icons/ri'
+import { Link, NavLink } from 'react-router-dom';
+import './Sidebar.scss';
+import Logo from '../../assets/images/logo.png';
+import LogoSubtitle from '../../assets/images/subtitle.png';
+import { TbHomeMove } from 'react-icons/tb';
+import { FaRegEnvelope, FaQuestion } from 'react-icons/fa6';
+import {
+  RiContactsLine,
+  RiLinkedinBoxLine,
+  RiGithubLine,
+} from 'react-icons/ri';
 
 export default function Sidebar() {
   return (
@@ -68,5 +72,5 @@ export default function Sidebar() {
         </li>
       </ul>
     </div>
-  )
+  );
 }

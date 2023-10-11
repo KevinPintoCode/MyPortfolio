@@ -1,18 +1,19 @@
 //Router
-import { Link } from 'react-router-dom'
-import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 //React
-import k_letter from '../../assets/images/k_letter.png'
-import './Home.scss'
-import '../Animated/AnimatedLetters.scss'
+import k_letter from '../../assets/images/k_letter.png';
+import './Home.scss';
+import '../Animated/AnimatedLetters.scss';
 //Components
-import AnimatedLetters from '../Animated/AnimatedLetters'
+import AnimatedLetters from '../Animated/AnimatedLetters';
+import Logo from '../Logo/Logo';
 
 export default function Home() {
-  const [letterClass, setLetterClass] = useState('text-animate')
-  const greetArray = 'Greetings Adventurer...'.split('')
-  const nameArray = 'evin Pinto'.split('')
-  const jobArray = 'web developer'.split('')
+  const [letterClass, setLetterClass] = useState('text-animate');
+  const greetArray = 'Greetings Adventurer...'.split('');
+  const nameArray = 'evin Pinto'.split('');
+  const jobArray = 'web developer'.split('');
 
   return (
     <div>
@@ -54,5 +55,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-  )
+  );
 }

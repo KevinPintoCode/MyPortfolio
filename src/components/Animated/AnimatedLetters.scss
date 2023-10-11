@@ -5,7 +5,8 @@
 
   &:hover {
     height: 1px;
-    animation: rubberBand 1s;
+    animation: flash 1s;
+    font-size: 32px;
     font-family: 'Pixelify Sans', cursive;
     color: #a970ff;
   }

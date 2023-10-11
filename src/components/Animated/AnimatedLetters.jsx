@@ -1,4 +1,4 @@
-import './AnimatedLetters'
+import './AnimatedLetters';
 
 export default function AnimatedLetters({ letterClass, strArray, idx }) {
   return (
@@ -9,5 +9,5 @@ export default function AnimatedLetters({ letterClass, strArray, idx }) {
         </span>
       ))}
     </span>
-  )
+  );
 }
