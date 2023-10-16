@@ -19,7 +19,7 @@ export default function Sidebar() {
       </Link>
       <nav>
         <NavLink
-          className="active link home-link"
+          className="link home-link"
           exact="true"
           activeclassname="active"
           to="/"

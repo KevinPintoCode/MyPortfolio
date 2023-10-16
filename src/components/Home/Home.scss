@@ -1,17 +1,19 @@
 @import 'animate.css';
 
+.home-page {
+  animation-delay: 1.6s;
+}
 .greeting {
   //check responsive
-  position: absolute;
-  left: 10%;
-  top: 32%;
+  display: inline-block;
+  margin-left: 10%;
+  margin-top: 255px;
   font-family: 'Pixelify Sans', cursive;
-  transform: translateY(-50%);
+  font-weight: 400;
   width: 40%;
-  font-size: 42px;
-  opacity: 0;
+  font-size: 32px;
   animation: backInLeft 1s linear both;
-  animation-duration: 1.8s;
+  animation-duration: 1.5s;
   animation-delay: -0.7s;
   margin-bottom: 1px;
 }
@@ -44,7 +46,7 @@
       font-size: 1.2rem;
       position: absolute;
       margin-top: -2.3rem;
-      opacity: 0.8;
+      opacity: 0.6;
     }
     &::after {
       content: '</h1>';
@@ -52,19 +54,20 @@
       color: #a970ff;
       font-size: 1.2rem;
       position: absolute;
-      opacity: 0.8;
+      opacity: 0.6;
       margin-top: 0.8rem;
-      margin-left: 1.5rem;
+      margin-left: 29px;
     }
 
     img {
-      width: 2.6rem;
+      width: 45px;
       margin-left: 1rem;
-      margin-right: -0.6rem;
-      opacity: 0;
+      margin-right: -10px;
       height: auto;
-      animation: rotateIn 1s linear both;
-      animation-duration: 1.4s;
+
+      &:hover {
+        animation: wobble 0.7s;
+      }
     }
   }
   h2 {
@@ -72,8 +75,6 @@
     font-size: 1.4rem;
     opacity: 0.6;
     letter-spacing: 0.4rem;
-    animation: fadeIn 1s 1.8s backwards;
-    //Check
   }
   .flat_button {
     color: #a970ff;
@@ -86,7 +87,7 @@
     border: 1px solid #a970ff;
     margin-top: 2rem;
     float: left;
-    animation: fadeIn 1s 1.8s backwards;
+    animation: fadeIn 1s 1s backwards;
     white-space: nowrap;
     //check
     &:hover {

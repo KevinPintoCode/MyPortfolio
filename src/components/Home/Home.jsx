@@ -11,18 +11,18 @@ import Logo from '../Logo/Logo';
 
 export default function Home() {
   const [letterClass, setLetterClass] = useState('text-animate');
-  const greetArray = 'Greetings Adventurer...'.split('');
-  const nameArray = 'evin Pinto'.split('');
+  const greetArray = 'Welcome Adventurer...'.split('');
+  const nameArray = 'evin Pinto,'.split('');
   const jobArray = 'web developer'.split('');
-
+  useEffect(() => {
+    setTimeout(() => {
+      return setLetterClass('text-animate-hover');
+    }, 4000);
+  }, []);
   return (
     <div>
       <div className="greeting">
-        <AnimatedLetters
-          letterClass={letterClass}
-          strArray={greetArray}
-          idx={41}
-        />
+        <h2>Welcome Adventurer...</h2>
       </div>
       <div className="container home-page">
         <div className="text-zone">
@@ -30,9 +30,10 @@ export default function Home() {
             <br />
             <br />
             <br />
-            <span className={letterClass}>I</span>
-            <span className={letterClass}>'m</span>
-            <img className="k_letter" src={k_letter} alt="developer" />
+            <span className={`${letterClass} _11`}>I</span>
+            <span className={`${letterClass} _12`}>'</span>
+            <span className={`${letterClass} _13`}>m</span>
+            <img className="k-letter" src={k_letter} alt="developer" />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
@@ -42,7 +43,7 @@ export default function Home() {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={jobArray}
-              idx={28}
+              idx={25}
             />
           </h1>
           <h2>
