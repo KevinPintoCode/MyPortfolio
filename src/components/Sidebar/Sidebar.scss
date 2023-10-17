@@ -1,4 +1,28 @@
 .nav-bar {
+  ul {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+
+    li {
+      a {
+        padding: 7px 0;
+        display: block;
+        font-size: 1.4rem;
+        line-height: 16px;
+        color: #ffffff;
+
+        &:hover svg {
+          color: #a970ff;
+        }
+      }
+    }
+  }
   background: #1d1d1d;
   width: 70px;
   height: 100%;
@@ -94,31 +118,6 @@
 
     a.active {
       svg {
-        color: #a970ff;
-      }
-    }
-  }
-}
-
-ul {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  display: block;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  margin: 0;
-
-  li {
-    a {
-      padding: 7px 0;
-      display: block;
-      font-size: 1.4rem;
-      line-height: 16px;
-      color: #ffffff;
-
-      &:hover svg {
         color: #a970ff;
       }
     }
