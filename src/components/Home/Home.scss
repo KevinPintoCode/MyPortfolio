@@ -3,19 +3,17 @@
 .home-page {
   animation-delay: 1.6s;
 }
-.greeting {
-  //check responsive
-  display: inline-block;
-  margin-left: 10%;
-  margin-top: 255px;
+.welcome {
+  display: block;
   font-family: 'Pixelify Sans', cursive;
   font-weight: 400;
-  width: 40%;
-  font-size: 32px;
   animation: backInLeft 1s linear both;
   animation-duration: 1.5s;
   animation-delay: -0.7s;
-  margin-bottom: 1px;
+
+  h1 {
+    font-size: 52px;
+  }
 }
 
 .home-page {
@@ -34,30 +32,35 @@
     transform: translateY(-50%);
     width: 40%;
     max-height: 90%;
-  }
-  h1 {
-    font-size: 2rem;
-    margin: 0;
 
-    &::before {
-      content: '<h1>';
-      font-family: 'Pixelify Sans', cursive;
-      color: #a970ff;
-      font-size: 1.2rem;
-      position: absolute;
-      margin-top: -2.3rem;
-      opacity: 0.6;
+    h1 {
+      font-size: 53px;
+
+      &::before {
+        content: '<h1>';
+        font-family: 'Pixelify Sans', cursive;
+        color: #a970ff;
+        font-size: 1.2rem;
+        position: absolute;
+        margin-top: -2.3rem;
+        opacity: 0.6;
+      }
+      &::after {
+        content: '</h1>';
+        font-family: 'Pixelify Sans', cursive;
+        color: #a970ff;
+        font-size: 1.2rem;
+        position: absolute;
+        opacity: 0.6;
+        margin-top: 0.8rem;
+        margin-left: 29px;
+      }
     }
-    &::after {
-      content: '</h1>';
-      font-family: 'Pixelify Sans', cursive;
-      color: #a970ff;
-      font-size: 1.2rem;
-      position: absolute;
-      opacity: 0.6;
-      margin-top: 0.8rem;
-      margin-left: 29px;
-    }
+  }
+
+  h2 {
+    font-size: 32px;
+    margin: 0;
 
     img {
       width: 45px;
@@ -70,7 +73,7 @@
       }
     }
   }
-  h2 {
+  h3 {
     font-weight: 400;
     font-size: 1.4rem;
     opacity: 0.6;

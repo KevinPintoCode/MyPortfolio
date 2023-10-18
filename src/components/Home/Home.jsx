@@ -22,15 +22,18 @@ export default function Home() {
   return (
     <>
       <div>
-        <div className="greeting">
-          <h2>Welcome Adventurer...</h2>
-        </div>
         <div className="container home-page">
           <div className="text-zone">
-            <h1>
-              <br />
-              <br />
-              <br />
+            <div className="welcome">
+              <h1>
+                <AnimatedLetters
+                  letterClass={letterClass}
+                  strArray={greetArray}
+                  idx={15}
+                />
+              </h1>
+            </div>
+            <h2>
               <span className={`${letterClass} _11`}>I</span>
               <span className={`${letterClass} _12`}>'</span>
               <span className={`${letterClass} _13`}>m</span>
@@ -38,19 +41,19 @@ export default function Home() {
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={nameArray}
-                idx={15}
+                idx={21}
               />
               <br />
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={jobArray}
-                idx={25}
+                idx={31}
               />
-            </h1>
-            <h2>
+            </h2>
+            <h3>
               Frontend Developer / <span className="gamer">Gamer</span>{' '}
               <span className="purple">/</span> Designer /
-            </h2>
+            </h3>
             <Link to="/contact" className="flat_button">
               CONTACT ME
             </Link>

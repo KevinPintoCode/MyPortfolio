@@ -35,10 +35,10 @@ export default function Sidebar() {
           <RiContactsLine />
         </NavLink>
         <NavLink
-          className="link projects-link"
+          className="link portfolio-link"
           exact="true"
           activeclassname="active"
-          to="/projects"
+          to="/portfolio"
         >
           <FaQuestion />
         </NavLink>

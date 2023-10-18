@@ -58,12 +58,20 @@
 
   .flat-button {
     color: #a970ff;
-    background: 0 0;
+    background-color: #0e0e10;
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 0.3rem;
+    font-family: 'Pixelify Sans', cursive;
     text-decoration: none;
-    padding: 8px 10px;
+    padding: 0.8rem 1.1rem;
     border: 1px solid #a970ff;
     float: right;
-    border-radius: 4px;
-    letter-spacing: 3px;
+    //check
+    &:hover {
+      background: #a970ff;
+      color: #1d1d1d;
+      cursor: pointer;
+    }
   }
 }

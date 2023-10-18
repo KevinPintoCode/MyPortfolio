@@ -11,12 +11,6 @@
   transform: rotateZ(5deg);
   opacity: 1;
 
-  svg {
-    animation: pulse 1s 5s backwards;
-    width: 100%;
-    height: auto;
-    bottom: 0;
-  }
   .solid-logo {
     animation: pulse 1s 5s backwards;
     position: absolute;
