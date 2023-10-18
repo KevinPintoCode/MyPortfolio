@@ -41,13 +41,13 @@ export default function Home() {
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={nameArray}
-                idx={21}
+                idx={15}
               />
               <br />
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={jobArray}
-                idx={31}
+                idx={15}
               />
             </h2>
             <h3>

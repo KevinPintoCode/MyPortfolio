@@ -3,7 +3,8 @@ import './Sidebar.scss';
 import Logo from '../../assets/images/logo.png';
 import LogoSubtitle from '../../assets/images/subtitle.png';
 import { TbHomeMove } from 'react-icons/tb';
-import { FaRegEnvelope, FaQuestion } from 'react-icons/fa6';
+import { FaRegEnvelope } from 'react-icons/fa6';
+import { PiSword } from 'react-icons/pi';
 import {
   RiContactsLine,
   RiLinkedinBoxLine,
@@ -40,7 +41,7 @@ export default function Sidebar() {
           activeclassname="active"
           to="/portfolio"
         >
-          <FaQuestion />
+          <PiSword />
         </NavLink>
         <NavLink
           className="link contact-link"
