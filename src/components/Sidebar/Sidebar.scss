@@ -123,3 +123,12 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  nav-bar {
+    background: transparent;
+    position: initial;
+    height: auto;
+    min-height: auto;
+  }
+}
