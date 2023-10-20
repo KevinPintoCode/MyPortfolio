@@ -11,7 +11,9 @@ import Logo from '../Logo/Logo';
 
 export default function Home() {
   const [letterClass, setLetterClass] = useState('text-animate');
-  const greetArray = 'Welcome Adventurer...'.split('');
+  const greetArray = 'Welcome  Adventurer'.split('');
+  const greetArray1 = 'Welcome '.split('');
+  const greetArray2 = ' Adventurer...'.split('');
   const nameArray = 'evin Pinto,'.split('');
   const jobArray = 'web developer'.split('');
   useEffect(() => {
@@ -58,7 +60,6 @@ export default function Home() {
               CONTACT ME
             </Link>
           </div>
-          <div className="logo-container"></div>
         </div>
       </div>
       <Loader type="pacman" />
