@@ -1,25 +1,30 @@
 import { Link, NavLink } from 'react-router-dom';
+import { useState } from 'react';
 import './Sidebar.scss';
 import Logo from '../../assets/images/logo.png';
 import LogoSubtitle from '../../assets/images/subtitle.png';
 import { TbHomeMove } from 'react-icons/tb';
 import { FaRegEnvelope } from 'react-icons/fa6';
 import { PiSword } from 'react-icons/pi';
+import { GiHamburgerMenu } from 'react-icons/gi';
 import {
   RiContactsLine,
   RiLinkedinBoxLine,
   RiGithubLine,
 } from 'react-icons/ri';
+import { Fade as Hamburger } from 'hamburger-react';
 
 export default function Sidebar() {
+  const [isOpen, setOpen] = useState(false);
   return (
     <div className="nav-bar">
       <Link className="logo" to="/">
         <img className="logo" src={Logo} alt="logo" />
         <img className="subtitle" src={LogoSubtitle} alt="kevincode" />
       </Link>
-      <nav>
+      <nav className={isOpen ? 'mobile-show' : ''}>
         <NavLink
+          onClick={() => setOpen(!isOpen)}
           className="link home-link"
           exact="true"
           activeclassname="active"
@@ -28,6 +33,7 @@ export default function Sidebar() {
           <TbHomeMove />
         </NavLink>
         <NavLink
+          onClick={() => setOpen(!isOpen)}
           className="link about-link"
           exact="true"
           activeclassname="active"
@@ -36,6 +42,7 @@ export default function Sidebar() {
           <RiContactsLine />
         </NavLink>
         <NavLink
+          onClick={() => setOpen(!isOpen)}
           className="link portfolio-link"
           exact="true"
           activeclassname="active"
@@ -44,6 +51,7 @@ export default function Sidebar() {
           <PiSword />
         </NavLink>
         <NavLink
+          onClick={() => setOpen(!isOpen)}
           className="link contact-link"
           exact="true"
           activeclassname="active"
@@ -72,6 +80,14 @@ export default function Sidebar() {
           </a>
         </li>
       </ul>
+      <div className="hamburguer-icon">
+        <Hamburger
+          onClick={() => setOpen(!isOpen)}
+          color="#a970ff"
+          toggled={isOpen}
+          toggle={setOpen}
+        />
+      </div>
     </div>
   );
 }

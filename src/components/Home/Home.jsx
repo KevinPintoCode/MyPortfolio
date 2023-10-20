@@ -58,6 +58,7 @@ export default function Home() {
               CONTACT ME
             </Link>
           </div>
+          <div className="logo-container"></div>
         </div>
       </div>
       <Loader type="pacman" />

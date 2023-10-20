@@ -111,3 +111,40 @@
     max-height: 90%;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .page {
+    position: inital;
+  }
+
+  .tags,
+  .home-page h1::before,
+  .home-page h1::after,
+  .about-page h1::before,
+  .about-page h1::after,
+  .contact-page h1::before,
+  .contact-page h1::after,
+  .portfolio-page h1::before,
+  .portfolio-page h1::after {
+    display: none;
+  }
+
+  .container {
+    position: initial;
+    height: auto;
+    min-height: auto;
+
+    &.about-page,
+    &.contact-page,
+    &.portfolio-page {
+      .text-zone {
+        position: initial;
+        transform: none;
+        width: 100%;
+        display: block;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

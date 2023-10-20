@@ -121,14 +121,60 @@
         color: #a970ff;
       }
     }
+
+    &.mobile-show {
+      display: block;
+    }
   }
+}
+.hamburguer-icon {
+  display: none;
 }
 
 @media screen and (max-width: 1200px) {
-  nav-bar {
+  .nav-bar {
     background: transparent;
     position: initial;
     height: auto;
     min-height: auto;
+
+    ul,
+    nav {
+      display: none;
+    }
+
+    nav {
+      width: 100%;
+      height: 100%;
+      background: #1d1d1d;
+      top: 0;
+      left: 0;
+      position: fixed;
+      z-index: 2;
+      margin: 0;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      a:after {
+        opacity: 1;
+        position: initial;
+        width: auto;
+        margin-left: 12px;
+      }
+      svg {
+        opacity: 1 !important;
+      }
+    }
+
+    .hamburguer-icon {
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      z-index: 2;
+    }
   }
 }
