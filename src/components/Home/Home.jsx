@@ -15,7 +15,7 @@ export default function Home() {
   const greetArray1 = 'Welcome '.split('');
   const greetArray2 = ' Adventurer...'.split('');
   const nameArray = 'evin Pinto,'.split('');
-  const jobArray = 'web developer'.split('');
+  const jobArray = 'web developer...'.split('');
   useEffect(() => {
     setTimeout(() => {
       return setLetterClass('text-animate-hover');

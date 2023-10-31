@@ -47,9 +47,8 @@ export default function Contact() {
             />
           </h1>
           <p>
-            What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the
-            printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s
+            Ready to collaborate on a project or just want to discuss gaming and
+            design? Let's chat!
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>

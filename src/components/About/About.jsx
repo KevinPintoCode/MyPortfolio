@@ -28,19 +28,25 @@ export default function About() {
             />
           </h1>
           <p>
-            What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the
-            printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s
+            Hello there, I'm Kevin Pinto, known as "Goss" in the gaming world.
+            Hailing from Venezuela, I wear multiple hats as a front-end
+            developer, avid gamer, and passionate designer. Beyond the tech
+            realm, I'm also deeply into rap music and photography.
           </p>
           <p>
-            Why do we use it? It is a long established fact that a reader will
-            be distracted by the readable content of a page when looking at its
-            layout.
+            I have an insatiable curiosity for new technologies and the art of
+            creative coding. My journey into the world of full stack development
+            led me to discover the thrilling realm of Unity, where I can bring
+            my ideas to life and make meaningful contributions to the gaming
+            community.
           </p>
           <p>
-            Where can I get some? There are many variations of passages of Lorem
-            Ipsum available, but the majority have suffered alteration in some
-            form, by injected humour, or randomised words.
+            My background in engineering and my experiences as a world traveler,
+            devoted husband and pet lover, might seem diverse, but in 2021, I
+            decided to channel my passions into a new career. The fusion of
+            gaming and design in coding provided me with the exhilaration I've
+            sought for years. I've found my place, and I'm here to explore,
+            innovate, and make an impact.
           </p>
         </div>
         <div className="stage-cube-cont">

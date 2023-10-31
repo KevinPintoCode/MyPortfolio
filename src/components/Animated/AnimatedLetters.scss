@@ -18,6 +18,7 @@
     color: #a970ff;
   }
 }
+
 @for $i from 1 through 45 {
   .text-animate._#{$i} {
     animation-delay: #{$i * 0.1}s;

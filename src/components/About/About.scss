@@ -76,6 +76,10 @@
 }
 
 @media screen and (max-width: 900px) {
+  .text-zone {
+    padding-left: 400px;
+    padding-right: 400px;
+  }
   .stage-cube-cont {
     position: initial;
     width: 100%;
