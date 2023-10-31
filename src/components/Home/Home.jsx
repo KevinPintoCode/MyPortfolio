@@ -7,7 +7,6 @@ import './Home.scss';
 import Loader from 'react-loaders';
 //Components
 import AnimatedLetters from '../Animated/AnimatedLetters';
-import Logo from '../Logo/Logo';
 
 export default function Home() {
   const [letterClass, setLetterClass] = useState('text-animate');

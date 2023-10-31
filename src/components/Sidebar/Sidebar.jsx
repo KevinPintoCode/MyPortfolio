@@ -6,7 +6,6 @@ import LogoSubtitle from '../../assets/images/subtitle.png';
 import { TbHomeMove } from 'react-icons/tb';
 import { FaRegEnvelope } from 'react-icons/fa6';
 import { PiSword } from 'react-icons/pi';
-import { GiHamburgerMenu } from 'react-icons/gi';
 import {
   RiContactsLine,
   RiLinkedinBoxLine,
