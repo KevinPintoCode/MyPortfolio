@@ -1,3 +1,13 @@
+.logo-container {
+  position: relative;
+  width: 100px;
+  height: auto;
+  top: 50px;
+  right: 0;
+  box-sizing: border-box;
+  margin: auto;
+  left: 0;
+}
 .contact-form {
   width: 100%;
   margin-top: 30px;
@@ -82,8 +92,22 @@
       box-sizing: border-box;
       width: 100%;
     }
+
     .contact-form {
       box-sizing: border-box;
+    }
+
+    .logo-container {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      box-sizing: border-box;
+      object-fit: contain;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }

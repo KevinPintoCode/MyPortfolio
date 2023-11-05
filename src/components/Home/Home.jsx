@@ -7,12 +7,13 @@ import './Home.scss';
 import Loader from 'react-loaders';
 //Components
 import AnimatedLetters from '../Animated/AnimatedLetters';
+import LogoKC from '../LogoKC/LogoKC';
 
 export default function Home() {
   const [letterClass, setLetterClass] = useState('text-animate');
   const greetArray = 'Welcome  Adventurer'.split('');
   const greetArray1 = 'Welcome '.split('');
-  const greetArray2 = ' Adventurer...'.split('');
+  const greetArray2 = 'Adventurer...'.split('');
   const nameArray = 'evin Pinto,'.split('');
   const jobArray = 'web developer...'.split('');
   useEffect(() => {
@@ -27,11 +28,20 @@ export default function Home() {
           <div className="text-zone">
             <div className="welcome">
               <h1>
-                <AnimatedLetters
-                  letterClass={letterClass}
-                  strArray={greetArray}
-                  idx={15}
-                />
+                <div className="test">
+                  <AnimatedLetters
+                    letterClass={letterClass}
+                    strArray={greetArray1}
+                    idx={15}
+                  />
+                </div>
+                <div className="test">
+                  <AnimatedLetters
+                    letterClass={letterClass}
+                    strArray={greetArray2}
+                    idx={15}
+                  />
+                </div>
               </h1>
             </div>
             <h2>
@@ -58,6 +68,11 @@ export default function Home() {
             <Link to="/contact" className="flat_button">
               CONTACT ME
             </Link>
+          </div>
+          <div className="logo-container">
+            <div className="logo-img">
+              <LogoKC />
+            </div>
           </div>
         </div>
       </div>

@@ -8,6 +8,7 @@ import { SiReact, SiUnity, SiFigma } from 'react-icons/si';
 import { IconContext } from 'react-icons';
 
 import AnimatedLetters from '../Animated/AnimatedLetters';
+
 export default function About() {
   const aboutArr = 'About me'.split('');
   const [letterClass, setLetterClass] = useState('text-animate');
