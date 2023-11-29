@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <>
       <div>
-        <div className="container home-page">
+        <div className="container home-page" classNamee={`${jobArray}-asd`}>
           <div className="text-zone">
             <div className="welcome">
               <h1>
