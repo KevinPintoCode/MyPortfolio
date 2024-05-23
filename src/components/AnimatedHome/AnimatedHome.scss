@@ -1,0 +1,26 @@
+.text-animate {
+  min-width: 8px;
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInLeft 0.5s;
+  animation-fill-mode: forwards;
+  min-width: 10px;
+}
+.text-animate-hover {
+  min-width: 10px;
+  display: inline-block;
+  animation-fill-mode: both;
+
+  &:hover {
+    height: 1px;
+    animation: wobble 1s;
+    font-size: auto;
+    color: #a970ff;
+  }
+}
+
+@for $i from 1 through 45 {
+  .text-animate._#{$i} {
+    animation-delay: #{$i * 0.1}s;
+  }
+}

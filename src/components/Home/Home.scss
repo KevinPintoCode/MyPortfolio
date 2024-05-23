@@ -6,9 +6,8 @@
 .welcome {
   display: flex;
   font-family: 'Pixelify Sans', cursive;
-  font-weight: 400;
   animation: backInLeft 10s linear both;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-delay: -0.7s;
   flex-direction: row;
 
@@ -48,6 +47,7 @@
 
     h1 {
       font-size: 53px;
+      font-weight: 400;
 
       &::before {
         content: '<h1>';
@@ -72,6 +72,7 @@
   h2 {
     font-size: 32px;
     margin: 0;
+    font-weight: 500;
 
     img {
       width: 45px;

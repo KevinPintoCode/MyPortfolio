@@ -7,15 +7,14 @@ import './Home.scss';
 import Loader from 'react-loaders';
 //Components
 import AnimatedLetters from '../Animated/AnimatedLetters';
-import LogoKC from '../LogoKC/LogoKC';
 
 export default function Home() {
   const [letterClass, setLetterClass] = useState('text-animate');
-  const greetArray = 'Welcome  Adventurer'.split('');
+  const greetArray = 'Welcome  Adventurer...'.split('');
   const greetArray1 = 'Welcome '.split('');
   const greetArray2 = 'Adventurer...'.split('');
-  const nameArray = 'evin Pinto,'.split('');
-  const jobArray = 'web developer...'.split('');
+  const nameArray = 'evin Pinto...'.split('');
+  const jobArray = ''.split('');
   useEffect(() => {
     setTimeout(() => {
       return setLetterClass('text-animate-hover');
@@ -31,14 +30,7 @@ export default function Home() {
                 <div className="test">
                   <AnimatedLetters
                     letterClass={letterClass}
-                    strArray={greetArray1}
-                    idx={15}
-                  />
-                </div>
-                <div className="test">
-                  <AnimatedLetters
-                    letterClass={letterClass}
-                    strArray={greetArray2}
+                    strArray={greetArray}
                     idx={15}
                   />
                 </div>
@@ -46,8 +38,8 @@ export default function Home() {
             </div>
             <h2>
               <span className={`${letterClass} _11`}>I</span>
-              <span className={`${letterClass} _12`}>'</span>
-              <span className={`${letterClass} _13`}>m</span>
+              <span className={`${letterClass} _13`}>'</span>
+              <span className={`${letterClass} _14`}>m</span>
               <img className="k-letter" src={k_letter} alt="developer" />
               <AnimatedLetters
                 letterClass={letterClass}
@@ -69,11 +61,7 @@ export default function Home() {
               CONTACT ME
             </Link>
           </div>
-          <div className="logo-container">
-            <div className="logo-img">
-              <LogoKC />
-            </div>
-          </div>
+          <div className="logo-container"></div>
         </div>
       </div>
       <Loader type="pacman" />

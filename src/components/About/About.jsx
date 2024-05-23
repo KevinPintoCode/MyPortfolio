@@ -36,9 +36,9 @@ export default function About() {
           </p>
           <p>
             I have an insatiable curiosity for new technologies and the art of
-            creative coding. My journey into the world of full stack development
-            led me to discover the thrilling realm of Unity, where I can bring
-            my ideas to life and make meaningful contributions to the gaming
+            creative coding. My journey into the world of programming led me to
+            discover the thrilling realm of Unity, where I can bring my ideas to
+            life and add my touch of creativity and originality to the gaming
             community.
           </p>
           <p>
